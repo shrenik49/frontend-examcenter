@@ -1,16 +1,16 @@
 <template>
   <div class="parent">
-    <registerPage />
+    <LoginPage />
   </div>
 </template>
 
 <script>
 
- import registerPage from './components/RegisterPage.vue';
+ import LoginPage from './components/LoginPage.vue';
 
 export default {
   components: {
-    registerPage :registerPage,
+    LoginPage :LoginPage,
   }
 };
 </script>
