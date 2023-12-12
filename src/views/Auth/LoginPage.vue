@@ -56,9 +56,7 @@ export default {
         let result = await axios.post('http://localhost:3000/auth/login',credentialpayload)
         
           localStorage.setItem('token',result.data.token)
-          const token = localStorage.getItem('token')
-          console.log('token from local storage --->',token)
-          this.$router.push('/register');
+          this.$router.push('/dashboard');
       } catch (error) {
         console.error('Login failed:', error.response.data);
       }

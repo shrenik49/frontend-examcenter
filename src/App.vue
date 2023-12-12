@@ -1,6 +1,6 @@
 <template>
   <div class="parent">
-    <router-view /> <!-- This is where the matched component will be rendered -->
+    <router-view />
   </div>
 </template>
 
