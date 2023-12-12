@@ -1,27 +1,11 @@
 <template>
   <div class="parent">
-    <LoginPage />
+    <router-view /> <!-- This is where the matched component will be rendered -->
   </div>
 </template>
 
 <script>
-
- import LoginPage from './components/LoginPage.vue';
-
 export default {
-  components: {
-    LoginPage :LoginPage,
-  }
+  name: 'App',
 };
 </script>
-
-<style>
-  .parent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100%;
-  }
-</style>
-
